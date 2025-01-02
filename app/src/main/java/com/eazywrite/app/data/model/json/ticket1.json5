@@ -1,0 +1,103 @@
+{
+  "code": 200,
+  "message": "success",
+  "result": {
+    "object_list": [
+      {
+        "class": "other_invoice",
+        "image_angle": 0,
+        "item_list": [
+          {
+            "description": "金额",
+            "key": "money",
+            "position": [
+              276,
+              783,
+              430,
+              783,
+              430,
+              835,
+              276,
+              835
+            ],
+            "value": "1"
+          },
+          {
+            "description": "单号",
+            "key": "no",
+            "position": [
+              39,
+              1550,
+              454,
+              1568,
+              451,
+              1626,
+              36,
+              1610
+            ],
+            "value": "12345648946"
+          },
+          {
+            "description": "时间",
+            "key": "date",
+            "position": [],
+            "value": "2023-03-16 18:11:00"
+          },
+          {
+            "description": "商户",
+            "key": "shop",
+            "position": [
+              140,
+              116,
+              594,
+              137,
+              589,
+              245,
+              136,
+              224
+            ],
+            "value": "#28美团外卖"
+          },
+          {
+            "description": "商品",
+            "key": "sku",
+            "position": [],
+            "value": "怡然(鸡腿饭)\n浓香四溢|酱烧鸡腿肉饭(微辣)\n打包费\n科技"
+          }
+        ],
+        "position": [
+          0,
+          120,
+          714,
+          129,
+          717,
+          2612,
+          5,
+          2607
+        ],
+        "rotated_image_height": 2496,
+        "rotated_image_width": 724,
+        "type": "shop_receipt",
+        "type_description": "商户小票"
+      },
+      {
+        "class": "other_invoice",
+        "image_angle": 0,
+        "position": [
+          391,
+          76,
+          727,
+          4,
+          727,
+          350,
+          408,
+          424
+        ],
+        "rotated_image_height": 375,
+        "rotated_image_width": 353,
+        "type": "other",
+        "type_description": "其他"
+      }
+    ]
+  }
+}

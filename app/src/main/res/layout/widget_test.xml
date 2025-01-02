@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lly_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_test">
+
+    <ImageView
+        android:id="@+id/iv_cat"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_cat"/>
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_toRightOf="@id/iv_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_title"
+        android:layout_alignBottom="@+id/iv_cat"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/iv_cat"
+        android:text="24"
+        android:textColor="#8C6239"/>
+
+    <TextView
+        android:id="@+id/tv_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="星期五"
+        android:layout_toRightOf="@+id/tv_day"
+        android:layout_alignBottom="@+id/tv_day"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_monthyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tv_day"
+        android:layout_alignLeft="@+id/tv_day"
+        android:layout_marginTop="8dp"
+        android:text="2023年03月"
+        />
+
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="24dp"
+        android:clickable="true"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@+id/iv_cat"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/iv_title"
+        android:background="@drawable/restar_ui1"
+        android:focusable="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/refresh"
+        android:background="@drawable/widgettest_bg"
+        android:layout_alignTop="@+id/iv_title"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignBottom="@+id/iv_cat"
+        >
+
+        <ImageView
+            android:id="@+id/iv_editicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_edit"/>
+
+
+        <ImageView
+            android:id="@+id/view_widget"
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:background="#717273"
+            android:layout_toRightOf="@+id/iv_editicon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="进行记账"
+            android:layout_toRightOf="@+id/view_widget"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="#707070"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:background="#B4B4B4"
+        android:layout_toRightOf="@+id/tv_monthyear"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/tv_day"
+        android:layout_alignBottom="@+id/tv_monthyear"
+        />
+
+    <ImageView
+        android:id="@+id/ivtop"
+        android:layout_width="1dp"
+        android:layout_height="5dp"
+        android:layout_above="@+id/iv1"
+        android:background="#B4B4B4"
+        android:layout_toRightOf="@+id/tv_monthyear"
+        android:layout_marginLeft="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/ivbelow"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/iv1"
+        android:layout_toRightOf="@+id/tv_monthyear"
+        android:layout_marginLeft="20dp"
+        android:background="#B4B4B4"/>
+
+    <TextView
+        android:id="@+id/xiangmu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivtop"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/ivtop"
+        android:ellipsize="end"
+        android:maxLength="6"
+        android:text="公交车"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/xiangmu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xiangmu1"
+        android:layout_alignLeft="@+id/xiangmu1"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLength="6"
+        android:text="午饭"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/xiangmu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xiangmu2"
+        android:layout_alignLeft="@+id/xiangmu2"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:text="转卖物品"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/xiangmu4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xiangmu3"
+        android:layout_alignLeft="@+id/xiangmu3"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:text="球馆打球"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/money1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/relativelayout_edit"
+        android:layout_alignTop="@+id/xiangmu1"
+        android:text="-2.00"
+        android:textColor="#FFBB51"/>
+
+    <TextView
+        android:id="@+id/money2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/relativelayout_edit"
+        android:layout_alignTop="@+id/xiangmu2"
+        android:text="-17.00"
+        android:textColor="#FFBB51"/>
+
+    <TextView
+        android:id="@+id/money3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/relativelayout_edit"
+        android:layout_alignTop="@+id/xiangmu3"
+        android:text="+45.00"
+        android:textColor="#FFBB51"/>
+    <TextView
+        android:id="@+id/money4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/relativelayout_edit"
+        android:layout_alignTop="@+id/xiangmu4"
+        android:text="-30.00"
+        android:textColor="#FFBB51"/>
+
+
+    <LinearLayout
+        android:id="@+id/llt_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/money4"
+        android:orientation="horizontal"
+        android:layout_alignRight="@+id/relativelayout_edit"
+        android:layout_marginTop="6dp">
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="查看更多"
+            />
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/widget_return"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

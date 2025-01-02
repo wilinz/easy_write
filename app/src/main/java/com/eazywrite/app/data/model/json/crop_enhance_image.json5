@@ -1,0 +1,28 @@
+{
+  "code": 200,
+  "message": "success",
+  "version": "1.0.0",
+  "duration": 100,
+  "result": {
+    "image_list": [
+      {
+        "position": [
+          0,
+          10,
+          500,
+          10,
+          500,
+          300,
+          0,
+          300
+        ],
+        "cropped_height": 1800,
+        "image": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBD",
+        "cropped_width": 1500,
+        "angle": 90
+      }
+    ],
+    "origin_width": 2000,
+    "origin_height": 3000
+  }
+}

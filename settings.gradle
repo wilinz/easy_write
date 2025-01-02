@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/central" }
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/central" }
+        maven { url "https://jitpack.io" }
+        jcenter()
+    }
+}
+rootProject.name = "EazyWrite"
+include ':app'
+
+//setBinding(new Binding([gradle: this]))                                // new
+//evaluate(new File(                                                     // new
+//        settingsDir,                                              // new
+//        'flutter_module/.android/include_flutter.groovy'                         // new
+//))

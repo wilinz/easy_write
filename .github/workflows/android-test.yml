@@ -1,0 +1,41 @@
+name: Build Debug Apk
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - dev
+    paths-ignore:
+      - "README_zh-CN.md"
+      - "README.md"
+
+  pull_request:
+    paths-ignore:
+      - "README_zh-CN.md"
+      - "README.md"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        id: check
+        uses: actions/checkout@v3
+      - name: set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'corretto'
+          java-version: '11'
+          cache: 'gradle'
+
+      - run: chmod 777 ./gradlew
+
+      - name: Build App
+        run: ./gradlew app:assembleDebug
+
+#      - name: Upload apk to artifact 1
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: app-debug.apk
+#          path: app/build/outputs/apk/debug/*.apk

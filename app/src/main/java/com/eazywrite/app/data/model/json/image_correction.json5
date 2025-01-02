@@ -1,0 +1,9 @@
+{
+  "code": 200,
+  "message": "success",
+  "version": "0.2.0",
+  "duration": 100,
+  "result": {
+    "image": "iVBORw0KGgoAAAANSUhEUgAAEIAAABYA"
+  }
+}

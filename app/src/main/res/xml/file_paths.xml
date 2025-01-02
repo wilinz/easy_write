@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmls="http://schemas.android.com/apk/res/android">
+    <root-path
+        name="root"
+        path="." />
+    <files-path
+        name="files"
+        path="." />
+    <cache-path
+        name="cache"
+        path="/"/>
+    <external-path
+        name="external"
+        path="." />
+    <external-cache-path
+        name="external_cache"
+        path="." />
+    <external-files-path
+        name="external_file"
+        path="." />
+</paths>
+<!--
+元素必须包含一到多个子元素。这些子元素用于指定共享文件的目录路径，必须是这些元素之一：
+
+<files-path>：内部存储空间应用私有目录下的 files/ 目录，等同于 Context.getFilesDir() 所获取的目录路径；
+
+<cache-path>：内部存储空间应用私有目录下的 cache/ 目录，等同于 Context.getCacheDir() 所获取的目录路径；
+
+<external-path>：外部存储空间根目录，等同于 Environment.getExternalStorageDirectory() 所获取的目录路径；
+
+<external-files-path>：外部存储空间应用私有目录下的 files/ 目录，等同于 Context.getExternalFilesDir(null) 所获取的目录路径；
+
+<external-cache-path>：外部存储空间应用私有目录下的 cache/ 目录，等同于 Context.getExternalCacheDir()；
+-->

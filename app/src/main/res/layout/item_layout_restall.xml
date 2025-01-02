@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="wrap_content"
+
+    >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/icon"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/zhangmumingchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账目名称"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_alignTop="@+id/icon"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账目类型"
+        android:layout_alignLeft="@id/zhangmumingchen"
+        android:layout_alignBottom="@+id/icon"
+        android:textColor="#717273"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/beiZhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icon"
+        android:layout_toRightOf="@+id/name"
+        android:textSize="15sp"
+        android:textColor="#717273"
+        android:text="备注"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/icon"
+        android:textSize="15sp"
+        android:text="0.00"
+        android:layout_marginRight="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/line_background"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/name"
+        android:layout_alignRight="@id/money"
+        android:layout_below="@id/icon"
+        android:layout_marginLeft="3dp"
+        android:background="#C1C1C1"/>
+
+</RelativeLayout>

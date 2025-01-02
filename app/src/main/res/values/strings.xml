@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">简单记账</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="easyWrite">简 单 记 账</string>
+    <string name="chart">统计</string>
+    <string name="welcome">欢迎使用</string>
+    <string name="title_activity_we_chat_import">WeChatImportActivity</string>
+    <string name="title_activity_frequently_asked_questions">FrequentlyAskedQuestionsActivity
+    </string>
+    <string name="text_import_invoices_automatically">简单记账-自动导入账单</string>
+    <string name="text_import_invoices_automatically_desc">简单记账-自动导入账单：开启此功能后即可自动跳转到导入账单页面，不用手动点击，省时省力</string>
+</resources>
