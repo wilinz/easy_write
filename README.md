@@ -2,6 +2,7 @@
 
 ## 概要
 ### 下载地址：[https://disk.wilinz.com/share/0lchfzKx](https://disk.wilinz.com/share/0lchfzKx)
+### 后端项目地址：[https://github.com/wilinz/easywrite_service](https://github.com/wilinz/easywrite_service)
 
 本项目已经完全开源，您使用本项目源代码需遵守开源协议。本项目使用 MPL 协议并附加以下条款：**不得将此项目及其衍生的项目的源代码和二进制产品用于一切任何商业和盈利用途，否则本人保留追究法律责任的权利**。使用者需确保在任何情况下都不会将本项目用于商业目的。如有疑问，请联系项目维护者以获取更多信息。
 
