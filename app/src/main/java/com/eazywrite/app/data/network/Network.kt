@@ -45,7 +45,7 @@ object Network {
     private const val openaiUrl = "https://c-z0-api-01.hash070.com"
 
     // 必选
-    private val openaiKey = Base64.decode("api key base64").toString(Charsets.UTF_8) // TODO
+    private val openaiKey = kotlin.runCatching { Base64.decode("api key base64").toString(Charsets.UTF_8) }.getOrElse { "" } // TODO
 
     // 可选
     private const val textinAppId = ""
