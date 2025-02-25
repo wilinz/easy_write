@@ -104,7 +104,7 @@ dependencies {
 
     implementation 'com.github.jaikeerthick:Composable-Graphs:v1.2.1'
 
-    implementation 'org.litepal.guolindev:core:3.2.3'
+    implementation 'com.github.guolindev:LitePal:8ad8322'
 
     // CameraX core library using the camera2 implementation
     def camerax_version = "1.3.0-alpha04"
@@ -174,7 +174,7 @@ dependencies {
     implementation("io.ktor:ktor-client-android:$ktor_version")
 
     implementation "com.google.accompanist:accompanist-placeholder-material:0.30.0"
-    implementation 'com.github.AAChartModel:AAChartCore-Kotlin:7.2.1'
+    implementation 'com.github.AAChartModel:AAChartCore-Kotlin:7.4.0'
 
     implementation "io.noties.markwon:core:4.6.2"
 
