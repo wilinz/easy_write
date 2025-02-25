@@ -121,7 +121,7 @@ object Network {
         addInterceptor {
             it.proceed(
                 it.request().newBuilder().addHeader("connection", "Keep-Alive")
-                    .addHeader("authorization", "Bearer $key").build()
+                    .addHeader("authorization", "Bearer $openaiKey").build()
             )
         }
         addInterceptor {
@@ -131,7 +131,7 @@ object Network {
     }.build()
 
     val openAI = OpenAI(
-        token = key,
+        token = openaiKey,
         logging = LoggingConfig(LogLevel.None),
         host = OpenAIHost(baseUrl = openaiUrl),
         onClientCreated = {
